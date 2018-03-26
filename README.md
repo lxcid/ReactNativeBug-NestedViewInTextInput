@@ -53,9 +53,21 @@ A react native project have been created at [lxcid/ReactNativeBug-NestedViewInTe
 
 <!-- Write what you thought would happen. -->
 
-At minimum, I would hope for `<TextInput>` + `<Text>` + `<Image>` to work as expected in iOS and Android.
+At minimum, I would hope for `<TextInput>` + `<Text>` + `<Image>` to work as expected in iOS and Android. For example:
 
-https://github.com/lxcid/ReactNativeBug-NestedViewInTextInput/blob/1afdd2383ac70d08edc7c4742321cc46c5af225b/app/screens/TextInputImageScreen.js#L14-L23
+```js
+<TextInput multiline>
+  <Text style={styles.text}>
+    There is a react logo{' '}
+    <Image
+      source={images.react}
+      style={{ width: 30, height: 30, backgroundColor: 'pink' }}
+    />{' '}
+    in between my text.
+  </Text>
+</TextInput>
+// Copied from https://github.com/lxcid/ReactNativeBug-NestedViewInTextInput/blob/1afdd2383ac70d08edc7c4742321cc46c5af225b/app/screens/TextInputImageScreen.js#L14-L23
+```
 
 ## Actual Behavior
 
