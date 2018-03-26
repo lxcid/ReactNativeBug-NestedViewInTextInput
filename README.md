@@ -55,6 +55,8 @@ A react native project have been created at [lxcid/ReactNativeBug-NestedViewInTe
 
 At minimum, I would hope for `<TextInput>` + `<Text>` + `<Image>` to work as expected in iOS and Android.
 
+https://github.com/lxcid/ReactNativeBug-NestedViewInTextInput/blob/1afdd2383ac70d08edc7c4742321cc46c5af225b/app/screens/TextInputImageScreen.js#L14-L23
+
 ## Actual Behavior
 
 <!-- Write what happened. Include screenshots if needed. If this is a regression, let us know. -->
