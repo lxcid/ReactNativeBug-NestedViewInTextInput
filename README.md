@@ -21,6 +21,10 @@ I'm aware that `<TextInput />` uses `SpannableString` in Android and `NSAttribut
 
 To be specific, I'm talking about `<Image />` nested within `<Text />` nested within `<TextInput multiline />`.
 
+One of the use case is to support custom emoji as described by [@just4fun in facebook/react-native#17468](https://github.com/facebook/react-native/issues/17468#issuecomment-356797095) in the GIF below:
+
+![Custom Emoji](./screenshots/react-native+17468.gif)
+
 ## Environment
 
 <!-- Required. Run `react-native info` in your terminal and paste its contents here. -->
@@ -68,6 +72,8 @@ At minimum, I would hope for `<TextInput>` + `<Text>` + `<Image>` to work as exp
 </TextInput>
 // Copied from https://github.com/lxcid/ReactNativeBug-NestedViewInTextInput/blob/1afdd2383ac70d08edc7c4742321cc46c5af225b/app/screens/TextInputImageScreen.js#L14-L23
 ```
+
+But if we are able to support `<TextInput>` + `<Text>` + `<View>` as well, that would be awesome!
 
 ## Actual Behavior
 
