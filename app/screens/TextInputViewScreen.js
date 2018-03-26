@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Image, StyleSheet, Text, TextInput, View } from 'react-native';
+import { StyleSheet, Text, TextInput, View } from 'react-native';
 
 import { images } from '../assets';
 
-export default class TextInputImageScreen extends Component {
+export default class TextInputViewScreen extends Component {
   static navigationOptions = {
-    title: 'TextInput + Image',
+    title: 'TextInput + View',
   };
 
   render() {
@@ -13,10 +13,9 @@ export default class TextInputImageScreen extends Component {
       <View style={styles.container}>
         <TextInput multiline>
           <Text style={styles.text}>
-            There is a react logo{' '}
-            <Image
-              source={images.react}
-              style={{ width: 30, height: 30, backgroundColor: 'pink' }}
+            There is a blue square{' '}
+            <View
+              style={{ width: 50, height: 50, backgroundColor: 'steelblue' }}
             />{' '}
             in between my text.
           </Text>

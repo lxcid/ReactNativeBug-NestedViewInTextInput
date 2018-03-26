@@ -5,6 +5,10 @@ import { Button, StyleSheet, View } from 'react-native';
 import { images } from '../assets';
 
 export default class HomeScreen extends Component {
+  static navigationOptions = {
+    title: 'Home',
+  };
+
   static propTypes = {
     navigation: PropTypes.shape({
       navigate: PropTypes.func.isRequired,
@@ -26,6 +30,20 @@ export default class HomeScreen extends Component {
             style={styles.button}
             onPress={() => this.props.navigation.navigate('TextView')}
             title="Text + View"
+          />
+        </View>
+        <View style={styles.button}>
+          <Button
+            style={styles.button}
+            onPress={() => this.props.navigation.navigate('TextInputImage')}
+            title="TextInput + Image"
+          />
+        </View>
+        <View style={styles.button}>
+          <Button
+            style={styles.button}
+            onPress={() => this.props.navigation.navigate('TextInputView')}
+            title="TextInput + View"
           />
         </View>
       </View>

@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "prettier": "prettier --single-quote --trailing-comma es5 --write \"{app,__{tests,mocks}__}/**/*.js\"",
+    "prettier": "prettier --single-quote --trailing-comma es5 --write \"{app,__{tests,mocks}__}/**/*.js\" \"README.md\"",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },

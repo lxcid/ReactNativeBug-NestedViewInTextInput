@@ -4,6 +4,10 @@ import { Image, StyleSheet, Text, View } from 'react-native';
 import { images } from '../assets';
 
 export default class TextImageScreen extends Component {
+  static navigationOptions = {
+    title: 'Text + Image',
+  };
+
   render() {
     return (
       <View style={styles.container}>
