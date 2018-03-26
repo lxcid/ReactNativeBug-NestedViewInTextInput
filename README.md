@@ -18,11 +18,15 @@ Here's my attempt to provide a more complete argument and be as informative as p
 
 I'm aware that `<TextInput />` uses `SpannableString` in Android and `NSAttributedString` in iOS underneath, both are capable of inlining image (Android with `ImageSpan` and iOS with `NSTextAttachment`). But this is not supported by React Native as of `v0.54.2`.
 
-To be specific, I'm talking about `<Text />` nested within `<TextInput multiline />`.
+To be specific, I'm talking about `<Image />` nested within `<Text />` nested within `<TextInput multiline />`.
 
-First of, `<Text />` on it own supports [nested views](https://facebook.github.io/react-native/docs/text.html#nested-views-ios-only) in iOS but not in Android.
+First of all, `<Text />` do support nested images, even though its not well documented. There might be some rendering differences between iOS and Android, but they are generally supported.
 
+![Text + Image](./screenshots/text+image.png)
 
+As for [nested views](https://facebook.github.io/react-native/docs/text.html#nested-views-ios-only) in `<Text />`, only iOS is supported.
+
+![Text + View](./screenshots/text+view.png)
 
 Surprisingly, `<Text />` supports `<Image />` as child element
 
