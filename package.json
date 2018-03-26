@@ -1,0 +1,26 @@
+{
+  "name": "NestedViewInTextInput",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "prettier": "prettier --single-quote --trailing-comma es5 --write \"{app,__{tests,mocks}__}/**/*.js\"",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "prettier": "^1.11.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.0-alpha.1",
+    "react-native": "0.54.2",
+    "react-navigation": "^1.5.8"
+  },
+  "devDependencies": {
+    "babel-jest": "22.4.3",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.4.3",
+    "react-test-renderer": "^16.3.0-alpha.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
