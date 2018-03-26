@@ -115,3 +115,5 @@ I create a table to summarize and compare what we have observed here:
 |  `<TextInput>` +`<Text>` + `<View>`  |   💥    | ❌  |
 
 ## References
+
+- [facebook/react-native#18566](https://github.com/facebook/react-native/issues/18566)
