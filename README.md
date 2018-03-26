@@ -59,7 +59,7 @@ A react native project have been created at [lxcid/ReactNativeBug-NestedViewInTe
 
 At minimum, I would hope for `<TextInput>` + `<Text>` + `<Image>` to work as expected in iOS and Android. For example:
 
-```js
+```jsx
 <TextInput multiline>
   <Text style={styles.text}>
     There is a react logo{' '}
